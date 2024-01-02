@@ -1,0 +1,132 @@
+@media (min-width:768px){
+    header{
+        height:454px;
+    }
+    header img.doctor{
+        height: 100px;
+    }
+    .nav-list{
+        list-style: none;
+        margin-bottom: 190px;
+    }    
+    .nav-list a {
+        font-size: 24px;
+    }
+    /* sinopse */
+    section.sinopse img{
+        height: 269px;
+        order:1;
+        margin-top:73px;
+        margin-right:30px;
+    
+    }
+    div._div{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    div._div div.flex{
+        display:flex;
+        flex-direction:column;
+    }
+    div._div h2{
+        display:block;
+        font-size: 37px;
+        order:2;
+        margin-top: 38px;
+        margin-bottom: 10px;
+        
+    }
+    div._div p{
+        font-size: 15px;
+        font-weight: 300;
+        order:3;
+        margin-top:12px;
+        width:305px;
+    }
+    /* mudar */
+    section.mudar {
+        position:relative;
+    }
+    section.mudar h2{
+        font-size:40px;
+        margin-top:115px;
+        margin-bottom:7px;
+        
+    }
+    section.mudar img{
+        height:255px;
+    }
+    section.mudar img#disney{
+        margin-top:70px;
+        margin-bottom:26px;
+        height:144px;
+        
+      
+        
+    }
+    section.mudar img#doctor_11{
+    margin-right:93px;
+    
+        
+    }
+    section.mudar img#doctor_10{
+        position:absolute;
+        top:15%;
+        left:85%;
+    }
+    section.mudar div.mudar_div{
+        display:flex;
+        flex-direction:row;
+    }
+    section.mudar button{
+        padding:14px 88px 14px 88px;
+        font-size:33px;
+    }
+  
+    section.elenco h2{
+        font-size:40px;
+        margin-bottom: 80px;
+     }
+     div.elenco_div img{
+        height: 216px;
+     }
+     /* temporadas */
+     section.temporadas h2{
+        font-size: 40px;
+     }
+     div._div_{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    div._div_  div.teste{
+        display:flex;
+        flex-direction:column;
+    }
+    div._div_ img{
+        order:1;
+        height: 303px;
+        margin-right: 33px;
+    }
+ 
+    div._div_ h2.number{
+        display:block !important;
+        order: 2;
+        font-size: 33px;
+    }
+    div._div_ p.lorem{
+        font-size: 20px;
+        font-weight: 300;
+        order:3;
+        margin-top:12px;
+        width:449px;
+
+    }
+}

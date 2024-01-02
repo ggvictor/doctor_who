@@ -1,0 +1,293 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalam:wght@300;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    background-image: linear-gradient(to bottom #652D9E black) !important;
+    height:100vh;
+}
+/* header */
+header{
+    background: url(../imagens/banner.png);
+    height:279px;
+    background-size: cover;
+    background-position:center center;
+}
+header img.doctor{
+    height: 40px;
+}
+header a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header a:hover{
+    opacity: 0.7;
+}
+/* menu hamburguer */
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'kalam';
+    height: 8vh;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list a {
+    font-size: 18px;
+    font-weight: bold;
+    padding-block: 16px;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+div button.hamburguer{
+    margin-bottom: 100px;
+    border: none;
+    display: none;
+    background: none;
+    border-top: 3px solid black;
+    cursor: pointer;
+}
+div button.hamburguer::before,
+div button.hamburguer::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+@media (max-width:480px){
+    div button.hamburguer{
+        display: block;
+        z-index: 1;
+    }
+    .nav-list{
+        position: fixed;
+        top:0%;
+        left: 50%;
+        width: 50vw;
+        height: 100vh;
+        background: #2e025a;
+        clip-path: circle(100px at 110px -25%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+        pointer-events: none;
+    }
+    .nav-list a{
+        font-size: 24px;
+        opacity: 0;
+    }
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+    /* estilos ativos */
+    .nav.active .nav-list{
+        clip-path: circle(1500px at 110px -25%);
+        pointer-events: all;
+    }
+    .nav.active .nav-list a{
+        opacity: 1;
+    }
+    .nav.active .hamburguer{
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+    .nav.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+    .nav.active .hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+main{
+    background-image: linear-gradient(to bottom, #652D9E,black);
+}
+/* sinopse */
+section.sinopse img{
+    height: 171px;
+    order:2;
+}
+div._div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+div._div h2{
+    font-family: 'bebas neue';
+    font-size: 30px;
+    order:1;
+    margin-top: 38px;
+    margin-bottom: 10px;
+    
+}
+div._div p{
+    font-family: 'kalam';
+    font-size: 10px;
+    font-weight: 300;
+    order:3;
+    margin-top:12px;
+    width:255px;
+}
+/* outra seção */
+section.mudar{
+    color:white;
+    text-align:center;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+section.mudar h2{
+    font-size:30px;
+    margin-top:18px;
+    margin-bottom:7px;
+    font-family:'bebas Neue';
+}
+section.mudar img{
+    height:141px;
+}
+section.mudar img#disney{
+    margin-top:19px;
+    margin-bottom:26px;
+    height:63px;
+    order:3;
+}
+
+section.mudar div.mudar_div{
+    display:flex;
+    flex-direction:column;
+}
+section.mudar div.mudar_double{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+}
+section.mudar button{
+    background:#8b3ddabb;
+    font-family:'bebas Neue';
+    color:white;
+    border:none;
+    border-radius:15px;
+    padding:14px 56px 14px 56px;
+    font-size:20px;
+    cursor:pointer;
+    margin-bottom:30px;
+}
+section.mudar button:hover{
+    background:white;
+    color:#8b3ddabb;
+    transition:1s;
+}
+section.mudar button:active{
+    color:black;
+}
+/* elenco */
+section.elenco{
+    color: white;
+    text-align: center;
+}
+ section.elenco h2{
+    font-family: "bebas Neue";
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size:30px;
+    margin-top: 100px;
+    margin-bottom: 56px;
+ }
+ div.elenco_div img{
+    height: 120px;
+ }
+ div.elenco_div .duas_elenco img{
+    height: 161px;
+ }
+ /* temporadas */
+ section.temporadas{
+    color:white;
+    text-align: center;
+ }
+ div._div_ img{
+    height: 191px;
+    order:1;
+    margin-top: 50px;
+ }
+ div._div_ div.teste{
+    order: 2;
+ }
+ div._div_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+ }
+ section.temporadas h2{
+    font-family: 'bebas neue';
+    font-size: 30px;
+    margin-top: 38px;
+    margin-bottom: 10px;
+ }
+ div._div_  h2.number{
+    font-family: 'bebas neue';
+    font-size: 30px;
+    
+    margin-top: 38px;
+    margin-bottom: 10px;
+ }
+ div._div_  p.lorem{
+    font-family: 'kalam';
+    font-size: 10px;
+    font-weight: 300;
+    
+    margin-top:12px;
+    width:255px;
+ }
+ footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ footer a{
+    color:white;
+    text-decoration: none;
+ }
+ footer a:hover{
+    color: #652D9E;
+    text-decoration: underline;
+    transition: 0.5s;
+ }
+ footer a:active{
+    color: #652D9E;
+    text-decoration: none;
+ }

@@ -1,0 +1,92 @@
+@media (min-width:1280px){
+    header{
+        height:679px;
+    }
+    header img.doctor{
+        height: 170px;
+    }
+    .nav-list{
+        list-style: none;
+        margin-bottom: 270px;
+    }   
+    .nav-list a {
+        font-size: 33px;
+    }
+     /* sinopse */
+     section.sinopse img{
+        height: 350px;
+        order:1;
+        margin-top:73px;
+        margin-right:30px;
+        
+    }
+    div._div{
+        justify-content: space-around;
+        
+    }
+    div._div h2{
+        font-size: 50px;
+        margin-top: 38px;
+        margin-bottom: 10px;
+        
+    }
+    div._div p{
+        font-size: 33px;
+        font-weight: 300;
+        order:3;
+        margin-top:12px;
+        width:570px;
+     }
+      /* mudar */
+    section.mudar {
+        position:relative;
+    }
+    section.mudar h2{
+        font-size:50px;
+    }
+    section.mudar img{
+        height:533px;
+    }
+    section.mudar img#disney{
+        margin-top:190px;
+        margin-left:125px;
+        height:165px;
+    }
+    section.mudar img#doctor_10{
+        position:absolute;
+        top:15%;
+        left:83%;
+    }
+    section.elenco h2{
+        font-size:50px;
+        margin-bottom: 90px;
+     }
+     div.elenco_div img{
+        height: 325px;
+     }
+      /* temporadas */
+      section.temporadas h2{
+        font-size: 50px;
+        }
+        div._div_ img{
+            height: 525px;
+            margin-right: 45px;
+            margin-bottom:91px;
+        }
+        div._div_ h2.number{
+            font-size: 43px;
+        }
+        div._div_ p.lorem{
+            font-size: 30px;
+            font-weight: 300;
+        
+            margin-top:12px;
+            width:800px;
+
+        }
+        div._div_{
+            justify-content: space-around;
+            
+        }
+ 
+}
