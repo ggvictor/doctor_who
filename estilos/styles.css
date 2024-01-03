@@ -69,7 +69,7 @@ div button.hamburguer::after{
     position: relative;
     transition: 0.3s;
 }
-@media (max-width:480px){
+@media (max-width:767px){
     div button.hamburguer{
         display: block;
         z-index: 1;
@@ -277,6 +277,10 @@ section.elenco{
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
+ }
+ footer h2.footer{
+    margin-top:60px;
+    font-size: 20px;
  }
  footer a{
     color:white;
